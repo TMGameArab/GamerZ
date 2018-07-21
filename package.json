@@ -16,8 +16,8 @@
     "file-system":"2.2.2",
     "moment":"2.22.2" ,
     "fs-extra":"6.0.1" ,
-    "pretty-ms":3.2.0 ,
-    "random-number":0.0.9 ,
+    "pretty-ms":"3.2.0" ,
+    "random-number":"0.0.9" ,
     "node-opus": "^0.2.7",
     "opusscript": "0.0.6"
   },
