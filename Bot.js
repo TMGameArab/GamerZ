@@ -97,11 +97,11 @@ client.on('message', msg => {
 
 **roles『 لأاظهار الرولات 』
 
-**رابط     『يرسل لك انفايت في الخاص 』
+--رابط ----> يرسل رابط السرفر فى الخاص
 
-**embed 『خاصيه غرد لكن بغير طريقه』 تم ايقافها حتي اشعار اخر
+**embed 『يكتب الكلام فى امبيد』 
 
-**say 『لي يكرر الكلام الذي تقوله』  تم ايقافها
+**say 『يكرر الكلام』
 
 ● ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ●  
     
@@ -173,11 +173,12 @@ client.on('message', message => {
          .setColor('RANDOM')
          .setTimestamp()
          .setTitle(message.guild.name,message.guild.iconURL)
-         .addField('Mester','<@!239614214816137216>')
-         .addField('Master','<@!267420717430079488>')
-         .addField('TeamWork','<@!299899582211555329>')
-         .addField('TeamWork','<@!439393453332234243>')
-         .addField('TeamWork','<@!287312043734728704>')
+         .addField('Owner','<@439393453332234243>')
+         .addField('Owner','<@287312043734728704>')
+         .addField('Co Owner','<@294155759741304833>')
+         .addField('Co Owner','<@256808602206076929>')
+         .addField('TeamWork','<@404367572063092736>')
+	 .addField('TeamWork','<@321017208740380673>')
          message.channel.send({embed:xNiTRoZ});
      }
     });
@@ -254,7 +255,7 @@ return;
   let args = message.content.split(" ").slice(1);
 
 // ^^say
-  if (command === "---------say") {
+  if (command === "**say") {
           message.delete()
     message.channel.sendMessage(args.join(" ")).catch(console.error);
   }
