@@ -177,8 +177,8 @@ client.on('message', message => {
          .addField('Owner','<@287312043734728704>')
          .addField('Co Owner','<@294155759741304833>')
          .addField('Co Owner','<@256808602206076929>')
-         .addField('TeamWork','<@404367572063092736>')
-	 .addField('TeamWork','<@321017208740380673>')
+         .addField('Co Owner','<@404367572063092736>')
+	 .addField('Co Owner','<@321017208740380673>')
          message.channel.send({embed:xNiTRoZ});
      }
     });
@@ -454,7 +454,7 @@ client.on('message', function(message) {
         .setThumbnail(`${message.author.avatarURL}`)
         .setDescription(`\n\n\`\`\`${message.content}\`\`\``)
         .setFooter(`From **${message.author.tag} (${message.author.id})**`)
-    client.channels.get("451839271268122625").send({embed:embed});
+    client.channels.get("469247035074150411").send({embed:embed});
     }
 });
 
