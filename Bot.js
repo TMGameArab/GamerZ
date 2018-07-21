@@ -1296,18 +1296,18 @@ let cont = message.content.slice(prefix.length).split(" ");
 let args = cont.slice(1);
 if(message.content.startsWith(prefix + 'transfer')) {
           if (!args[0]) {
-            message.channel.send(`**Ø§Ø°Ø§ ÙƒÙ†Øª ØªØ±ÙŠØ¯ Ø§Ù† ØªØ­ÙˆÙ„ Ø§Ù„Ù‰ Ø´Ø®Øµ Ø¹Ù† Ø·Ø±ÙŠÙ‚ Ø§Ù„Ø§Ù…Ø± Ø§Ù„ØªØ§Ù„ÙŠ: ${prefix}credits <Ø§Ù„Ø´Ø®Øµ> <Ø§Ù„Ù…Ø¨Ù„Øº>**`);
+            message.channel.send(`**تأكد من المال من : ${prefix}credits <يجب ذكر الشخص و تحديد الرقم>**`);
          return;
            }
         // We should also make sure that args[0] is a number
         if (isNaN(args[0])) {
-            message.channel.send(`**ÙŠØ¬Ø¨ Ø§Ù† ØªÙƒØªØ¨ Ø§Ù„Ù…Ø¨Ù„Øº : ${prefix}credits <Ø§Ù„Ø´Ø®Øµ> <Ø§Ù„Ù…Ø¨Ù„Øº>**`);
+            message.channel.send(`**تأكد من المال من : ${prefix}credits <يجب ذكر الشخص و تحديد الرقم>**`);
             return; // Remember to return if you are sending an error message! So the rest of the code doesn't run.
              }
             let defineduser = '';
             let firstMentioned = message.mentions.users.first();
             defineduser = (firstMentioned)
-            if (!defineduser) return message.channel.send(`**ÙŠØ¬Ø¨ Ø§Ù† ØªÙƒØªØ¨ Ø§Ù„Ù…Ø¨Ù„Øº : ${prefix}credits <Ø§Ù„Ø´Ø®Øµ> <Ø§Ù„Ù…Ø¨Ù„Øº>**`);
+            if (!defineduser) return message.channel.send(`**تأكد من المال من : ${prefix}credits <يجب ذكر الشخص و تحديد الرقم>**`);
             var mentionned = message.mentions.users.first();
 if (!userData[sender.id]) userData[sender.id] = {}
 if (!userData[sender.id].money) userData[sender.id].money = 200;
@@ -1320,7 +1320,7 @@ if (err) console.error(err);
       userData[defineduser.id].money += (+args[0]);
       userData[sender.id].money += (-args[0]);
       let mariam = message.author.username
-message.channel.send('`' + mentionned.username + '`' + '** Ø§Ù„Ù‰  **'+ '`' + mariam + '`' + '**  ØªÙ… ØªØ­ÙˆÙŠÙ„ Ø§Ù„Ù…Ø¨Ù„Øº**'+ (args[0]) + '** :dollar: Ù…Ù† **')
+message.channel.send('`' + mentionned.username + '`' + 'لقد تم تحويل المال من **'+ '`' + mariam + '`' + '**مبروك**'+ (args[0]) + '** :dollar: المال **')
 }
 
 if(message.content.startsWith(prefix + 'daily')) {
