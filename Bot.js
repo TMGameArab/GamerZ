@@ -973,7 +973,7 @@ client.on("roleCreate", rc => {
 
 //-----------------------------------------------------
 let done = {};
-var prefix = "&"
+var prefix = "**"
 
 
 client.on('ready', () => {
