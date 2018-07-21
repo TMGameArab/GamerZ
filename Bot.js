@@ -245,7 +245,9 @@ return;
       .addField('عدد اعضاء السيرفر',`${message.guild.memberCount}`)
       message.channel.send(IzRo);
     });
-    client.on('message', message => {
+var prefix = "##";
+
+client.on('message', message => {
   if (message.author.bot) return;
   if (!message.content.startsWith(prefix)) return;
 
@@ -253,16 +255,13 @@ return;
   command = command.slice(prefix.length);
 
   let args = message.content.split(" ").slice(1);
-
-// ^^say
-  if (command === "**say") {
+	
+  if (command === "say") {
           message.delete()
     message.channel.sendMessage(args.join(" ")).catch(console.error);
   }
   
- 
-
-if (command == "**embed") {
+if (command == "embed") {
     let say = new Discord.RichEmbed()
     .setDescription(args.join("  "))
     .setColor(0x23b2d6)
