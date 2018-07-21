@@ -154,7 +154,7 @@ client.on('message', message => {
          .setTitle(message.guild.name,message.guild.iconURL)
          .addField(':id: اي دي السيرفر',`${message.guild.id}`,true)
          .addField(':date: أنشئت في',D3 + '.' + M2 + '.' + Y1,true)             
-.addField(':crown: اونر السيرفر',`{message.guild.owner}`)
+.addField(':crown: اونر السيرفر',`${message.guild.owner}`)
          .addField(':busts_in_silhouette: الاعضاء ' + ` ${message.guild.memberCount} `,'Online '+`[ ${message.guild.members.filter(m=>m.presence.status == 'online','idle','dnd').size} ]`+ ','+'Offline '+`[ ${message.guild.members.filter(m=>m.presence.status == 'offline').size} ]`,true)
          .addField(':speech_balloon: قنوات' +' '+message.guild.channels.size+' ',`Text [ ${message.guild.channels.filter(m => m.type === 'text').size} ]`+', '+`Voice [ ${message.guild.channels.filter(m => m.type === 'voice').size} ]`,true)
          .addField(':earth_asia: الدوله',message.guild.region)
