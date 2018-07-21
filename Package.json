@@ -1,7 +1,7 @@
 {
-  "name": "GamerZ",
+  "name": "asdfasdf",
   "version": "2.1.0",
-  "description": "GamerZbot",
+  "description": "asdfasdf",
   "main": "bot.js",
   "scripts": {
     "test": "node bot.js"
