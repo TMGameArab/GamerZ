@@ -5,7 +5,6 @@ const ms = require("ms");
 const fs = require("fs");
 var Canvas = require('canvas');
 var jimp = require('jimp');
-const AutoRole = require("discord-auto-role");
 const bot = new Discord.Client({disableEveryone: true});
 bot.commands = new Discord.Collection();
 client.on('ready', () => {
