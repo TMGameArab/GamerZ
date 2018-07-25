@@ -92,7 +92,7 @@ client.on('message', msg => {
             j = -1;
         }
         i = i+j;
-        client.user.setActivity("اكتب قامد", {type : 'try'});
+        client.user.setActivity(i, {type : 'try'});
     }, ms);1000
 
 });
