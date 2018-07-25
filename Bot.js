@@ -634,7 +634,7 @@ client.on('guildMemberAdd', member => {
 
     while (!guild)
 
-        guild = client.guilds.get("اي دي سيرفرك - Server id");
+        guild = client.guilds.get("466415108441243649");
 
     guild.fetchInvites().then((data) => {
 
