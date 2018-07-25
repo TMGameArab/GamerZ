@@ -79,23 +79,6 @@ client.on('message', msg => {
   }
 });
 // -------------------------------------------
-  client.on('ready', function(){
-    var ms = 1000 ;
-    var setGame = [`**h `,` **he`,`**hel`,`**help`];
-    var i = -1;
-    var j = 0;
-    setInterval(function (){
-        if( i == -1 ){
-            j = 1;
-        }
-        if( i == (setGame.length)-1 ){
-            j = -1;
-        }
-        i = i+j;
-        client.user.setActivity(i, {type : 'try'});
-    }, ms);1000
-
-});
 //---------------------------------------------
 client.on('message', msg => {
   if (msg.content === '**adminhelp') {
