@@ -607,11 +607,12 @@ client.on('guildMemberAdd', member => {
     let embed = new Discord.RichEmbed()
         .setColor('RANDOM')
         .setThumbnail(memberavatar)
-        .addField('🎽 | name :  ',`${member}`)
-        .addField('welcome To GamerZ','ّ')
-        .addField('Enjoy in our community','ّ')
-        .addField('THANKS For Joinin','ّ')
-        .setFooter(`${member.guild.name}`)
+        .setDescription(`
+🎽 | name : ${member}
+welcome To LegendaryCommunity
+Enjoy in our community
+THANKS For Joinin
+${member.guild.name}`)
         .setTimestamp()
       channel.sendEmbed(embed);
     });
