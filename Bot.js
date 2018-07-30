@@ -544,7 +544,7 @@ client.on('message', function(message) {
         .setThumbnail(`${message.author.avatarURL}`)
         .setDescription(`\n\n\`\`\`${message.content}\`\`\``)
         .setFooter(`From **${message.author.tag} (${message.author.id})**`)
-    client.channels.get("469247035074150411").send({embed:embed});
+    client.channels.get("473298207271813144").send({embed:embed});
     }
 });
 
