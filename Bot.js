@@ -583,7 +583,7 @@ client.on('message', msg => {
 
 
 client.on('guildMemberAdd', member => {
-    let channel = member.guild.channels.find('name', 'welcome');
+    let channel = member.guild.channels.find('name', '⋐𝐖elcome⋑');
     let memberavatar = member.user.avatarURL
       if (!channel) return;
     let embed = new Discord.RichEmbed()
@@ -777,7 +777,7 @@ client.on('message', function(message) {
  
     if(message.content.startsWith(prefix + 'active')) {
         let guild = message.mentions.members.first();
-        let modlog = client.channels.find('name', 'active');
+        let modlog = client.channels.find('name', 'auditlog');
         let embed = new Discord.RichEmbed()
   .setColor('3fcf24')
   .setDescription('**__:white_check_mark: لقد تم تفعيلك في السيرفر__**')
@@ -788,7 +788,7 @@ client.on('message', function(message) {
   message.delete("..");
 
 
-        message.member.addRole(message.guild.roles.find('name', '-> 【 𝐌𝐞𝐦𝐛𝐞𝐫𝐬 】'));
+        message.member.addRole(message.guild.roles.find('name', '⚡  Լ.Ɲ MEMƁER™'));
         message.channel.send({embed:embed});
     }
 });
@@ -839,7 +839,7 @@ client.on('voiceStateUpdate', (oldM, newM) => {
     if(m1 === false && m2 === true) {
        let embed = new Discord.RichEmbed()
        .setAuthor(`${newM.user.tag}`, newM.user.avatarURL)
-       .setDescription(`${newM} اتعملو ميون`)
+       .setDescription(`${newM} تم اضافه ميوت ل`)
        .addField('بواسطة',`${user}`)
 
        ch.send(embed)
@@ -847,7 +847,7 @@ client.on('voiceStateUpdate', (oldM, newM) => {
     if(m1 === true && m2 === false) {
        let embed = new Discord.RichEmbed()
        .setAuthor(`${newM.user.tag}`, newM.user.avatarURL)
-       .setDescription(`${newM} اتشال الميون بتاعه`)
+       .setDescription(`${newM} تم ازاله الميوت ل`)
        .addField('بواسطة',`${user}`)
        .setTimestamp()
 
@@ -856,7 +856,7 @@ client.on('voiceStateUpdate', (oldM, newM) => {
     if(d1 === false && d2 === true) {
        let embed = new Discord.RichEmbed()
        .setAuthor(`${newM.user.tag}`, newM.user.avatarURL)
-       .setDescription(`${newM} اتعمله سيرفر دفنوني`)
+       .setDescription(`${newM} تم اضافه دفين ل`)
        .addField('بواسطة',`${user}`)
        .setTimestamp()
 
@@ -865,7 +865,7 @@ client.on('voiceStateUpdate', (oldM, newM) => {
     if(d1 === true && d2 === false) {
        let embed = new Discord.RichEmbed()
        .setAuthor(`${newM.user.tag}`, newM.user.avatarURL)
-       .setDescription(`${newM} اتشال السيرفر دفنوني بتاع`)
+       .setDescription(`${newM} تم ازاله دفين ل`)
        .addField('بواسطة',`${user}`)
        .setTimestamp()
 
