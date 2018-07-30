@@ -580,24 +580,6 @@ client.on('message', msg => {
       msg.delete();
     }
 });
-
-
-client.on('guildMemberAdd', member => {
-    let channel = member.guild.channels.find('name', '⋐𝐖elcome⋑');
-    let memberavatar = member.user.avatarURL
-      if (!channel) return;
-    let embed = new Discord.RichEmbed()
-        .setColor('RANDOM')
-        .setThumbnail(memberavatar)
-        .setDescription(`
-🎽 | name : ${member}
-welcome To LegendaryCommunity
-Enjoy in our community
-THANKS For Joinin
-${member.guild.name}`)
-        .setTimestamp()
-      channel.sendEmbed(embed);
-    });
     
     client.on('guildMemberRemove', member => {
         var embed = new Discord.RichEmbed()
