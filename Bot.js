@@ -1464,5 +1464,19 @@ client.channels.find('id', '472913104552853505').setName("⋐𝐖elcome⋑");
   }, 1000);
 });
 //---------------------------------------------------------------------------
+client.on('message' , async rebel => {
+    if(rebel.author.bot) return;
+    var ReBeL = client.guilds.get("469018748569780224");
+    let room = ReBeL.channels.get('473298207271813144');
+if(rebel.channel.type == 'dm') return;
+const embed = new Discord.RichEmbed() 
+      .setColor("RANDOM")
+      		.setFooter(` العدد : ${ReBeL.members.filter(member => member.voiceChannel).size}`)
+      .setDescription(`\n${ReBeL.members.filter(member => member.voiceChannel).map(m => m.user.tag).join('\n')}`);
+setInterval(() => {
+room.sendEmbed(embed);
+}, 30*60000);//
+});
+//--------------------------------------------------------------------------
 
 client.login(process.env.BOT_TOKEN);
