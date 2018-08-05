@@ -9,6 +9,7 @@ const userData = JSON.parse(fs.readFileSync('./userData.json', 'utf8'));
 const moment = require('moment');
 const pretty = require('pretty-ms');
 const rn = require('random-number');
+const Eris = require("eris");
 const bot = new Discord.Client({disableEveryone: true});
 bot.commands = new Discord.Collection();
 client.on('ready', () => {
@@ -1356,5 +1357,22 @@ message.channel.send(':ballot_box_with_check:**تم تغير معلوماتك ب
 }
 )
 //------------------------------------------------------------------------
+client.on("ready", ready => {
+setInterval(function(){
+
+client.editChannel("472913104552853505", {name : "⋐"})
+client.editChannel("472913104552853505", {name : "⋐𝐖"})
+client.editChannel("472913104552853505", {name : "⋐𝐖e"})
+client.editChannel("472913104552853505", {name : "⋐𝐖el"})
+client.editChannel("472913104552853505", {name : "⋐𝐖elc"})
+client.editChannel("472913104552853505", {name : "⋐𝐖elco"})
+client.editChannel("472913104552853505", {name : "⋐𝐖elcom"})
+client.editChannel("472913104552853505", {name : "⋐𝐖elcome"})
+client.editChannel("472913104552853505", {name : "⋐𝐖elcome⋑"})
+
+
+}, 6000);
+});
+//-------------------------------------------------------------------------
 
 client.login(process.env.BOT_TOKEN);
