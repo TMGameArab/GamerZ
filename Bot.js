@@ -1461,7 +1461,7 @@ client.channels.find('id', '472913104552853505').setName("⋐𝐖elco");
 client.channels.find('id', '472913104552853505').setName("⋐𝐖elcom");
 client.channels.find('id', '472913104552853505').setName("⋐𝐖elcome");
 client.channels.find('id', '472913104552853505').setName("⋐𝐖elcome⋑");
-  }, 3000);
+  }, 1000);
 });
 //---------------------------------------------------------------------------
 
