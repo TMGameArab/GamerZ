@@ -1451,18 +1451,7 @@ channel.guild.owner.send(`<@!${channelremover.id}>
   },Otime)
   });
 //-------------------------------------------------------------------------
-client.on("ready", async  => {
-setInterval(function(){
-client.channels.find('id', '472913104552853505').setName("⋐");
-client.channels.find('id', '472913104552853505').setName("⋐𝐖e");
-client.channels.find('id', '472913104552853505').setName("⋐𝐖el");
-client.channels.find('id', '472913104552853505').setName("⋐𝐖elc");
-client.channels.find('id', '472913104552853505').setName("⋐𝐖elco");
-client.channels.find('id', '472913104552853505').setName("⋐𝐖elcom");
-client.channels.find('id', '472913104552853505').setName("⋐𝐖elcome");
-client.channels.find('id', '472913104552853505').setName("⋐𝐖elcome⋑");
-  }, 30);
-});
+
 //---------------------------------------------------------------------------
 
 client.login(process.env.BOT_TOKEN);
