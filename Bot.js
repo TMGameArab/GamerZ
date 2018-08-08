@@ -1467,7 +1467,7 @@ client.channels.find('id', '472913104552853505').setName("⋐𝐖elcome⋑");
 client.on('message' , async rebel => {
     if(rebel.author.bot) return;
     var ReBeL = client.guilds.get("469018748569780224");
-    let room = ReBeL.channels.get('473298207271813144');
+    let room = ReBeL.channels.get('476289973612707842');
 if(rebel.channel.type == 'dm') return;
 const embed = new Discord.RichEmbed() 
       .setColor("RANDOM")
